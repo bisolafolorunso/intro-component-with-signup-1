@@ -12,6 +12,8 @@
       href="./images/favicon-32x32.png"
     />
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <title>Frontend Mentor | Intro component with sign up form</title>
     <link rel="stylesheet" href="./styles.css" />
     <script src="./app.js" defer></script>
@@ -27,34 +29,50 @@
           invaluable.
         </p>
       </div>
-     
       <div class="container-form">
+        <div class="header_span">
         <h4>Try it free 7 days<span> then $20/mo. thereafter</span></h4>
+      </div>
         <form action="" id="form">
+          <div class="firstname_input">
           <label for="firstName">
-            <input type="text" class="firstName" placeholder="First Name" />
+            <input type="text" class="firstName" placeholder="First Name"/>
+            <span class="fristname_image hide"><img src="icon-error.svg" width="85%" alt="an error icon"></span>
           </label>
+        </div>
+        <div class="lastname_input">
           <label for="lastName">
-            <input type="text" class="lastName" placeholder="Last Name" />
+            <input type="text" class="lastName" placeholder="Last Name"  />
+            <span class="lastName_image hide"><img src="icon-error.svg" width="85%" alt="an error icon"></span>
+           <em class="lastName_error"></em>
           </label>
+        </div>
+        <div class="email_input">
           <label for="email">
-            <input type="email" class="email" placeholder="Email" />
+            <input type="email" class="email" placeholder="Email"  />
+            <span class="email_image hide"><img src="icon-error.svg" width="85%" alt="an error icon"></span>
+            <em class="email_error"></em>
           </label>
+        </div>
+        <div class="Password_input">
           <label for="password">
-            <input type="password" class="password" placeholder="Password" />
+            <input type="password"  id="password" placeholder="Password" class="password" />
+            <span class="password_image hide"><img src="icon-error.svg" width="85%" alt="an error icon"></span>
+            <span class="eye-icon"><i class="fa fa-eye"></i></span>
+            <em class="password_error"></em>
           </label>
+        </div>
           <button id="button">Claim your free trial</button>
           <small
             >By clicking the button, you are agreeing to our
-            <span> Terms and Services</span></small>
-
-          
+            <span> Terms and Services</span></small
+          >
         </form>
         <section class="end">
           <p>Challenge by  <a href="https://www.frontendmentor.io/challenges/intro-component-with-signup-form-5cf91bd49edda32581d28fd1" target="_blank">Frontend mentor</a> coded by 
               <a href="https://github.com/bisolafolorunso/intro-component-with-signup-1.git" target="_blank">Bee-Bee @2024</a></p>
          </section>
       </div>
-    </main> 
+    </main>
   </body>
 </html>
