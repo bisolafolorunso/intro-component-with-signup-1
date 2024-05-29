@@ -29,7 +29,7 @@ form.addEventListener('submit', (e) => {
   // Check first name
   if (fName === '') {
     firstName.classList.add('error');
-    errorMessage.innerHTML = " Frist Name cannot be empty";
+    errorMessage.innerHTML = " Frist Name cannot be empty"
     errorMessage.classList.add("em");
     firstImage.classList.remove("hide");
   } else {
